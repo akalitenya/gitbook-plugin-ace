@@ -30,7 +30,7 @@ require(["gitbook", "jquery"], function (gitbook, $) {
             editor.getSession().setMode('ace/mode/' + config.lang);
 
             editor.session.setOptions({
-                tabSize: 2,
+                tabSize: 8,
                 useSoftTabs: true
             });
         });
