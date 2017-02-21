@@ -29,6 +29,8 @@ require(["gitbook", "jquery"], function (gitbook, $) {
 
             editor.getSession().setMode('ace/mode/' + config.lang);
 
+            editor.session.setOption("highlightActiveLine", false);
+            editor.session.setOption("highlightGutterLine", false);
             editor.session.setOptions({
                 tabSize: 2,
                 useSoftTabs: true,
