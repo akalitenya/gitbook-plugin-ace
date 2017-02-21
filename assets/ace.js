@@ -13,7 +13,11 @@ require(["gitbook", "jquery"], function (gitbook, $) {
 
             editor.setOptions({
                 autoScrollEditorIntoView: true,
-                maxLines: 100
+                maxLines: 100,
+                tabSize: 2,
+                useSoftTabs: true,
+                highlightActiveLine: false,
+                highlightGutterLine: false
             });
 
             if (!config.edit)
@@ -29,14 +33,14 @@ require(["gitbook", "jquery"], function (gitbook, $) {
 
             editor.getSession().setMode('ace/mode/' + config.lang);
 
-            editor.session.setOption("highlightActiveLine", false);
-            editor.session.setOption("highlightGutterLine", false);
-            editor.session.setOptions({
-                tabSize: 2,
-                useSoftTabs: true,
-                highlightActiveLine: false,
-                highlightGutterLine: false
-            });
+            // editor.session.setOption("highlightActiveLine", false);
+            // editor.session.setOption("highlightGutterLine", false);
+            // editor.session.setOptions({
+            //     tabSize: 2,
+            //     useSoftTabs: true,
+            //     highlightActiveLine: false,
+            //     highlightGutterLine: false
+            // });
         });
     };
 
