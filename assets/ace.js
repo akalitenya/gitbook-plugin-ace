@@ -13,7 +13,7 @@ require(["gitbook", "jquery"], function (gitbook, $) {
 
             editor.setOptions({
                 autoScrollEditorIntoView: true,
-                maxLines: 100,
+                maxLines: 1000,
                 tabSize: 2,
                 useSoftTabs: true,
                 highlightActiveLine: false,
